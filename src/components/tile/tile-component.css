@@ -1,0 +1,14 @@
+div.tile-container[isEnlarged="true"]{
+    background-color: yellow;
+}
+
+div.tile-container {    
+    padding: 40px;
+    border: .5px solid lightcyan;
+    flex: 1 0 15%; 
+}
+
+img {
+    max-width: 150px;
+    height: 80px;
+}

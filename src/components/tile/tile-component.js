@@ -4,21 +4,17 @@ import { connect } from 'react-redux'
 import { bindActionCreators } from 'redux'
 
 class Tile extends React.Component {
-  onLogoutClick = event => {
-    event.preventDefault()
-    this.props.logout()
-  }
     render(){
       return(
         <div className="tile-container">
-
+          <img src={this.props.eachImage} alt="Icon for a specific techonology" />
         </div>
       )
     }
 }
 
-const mapStateToProps = state => state.allImages
+// const mapStateToProps = state => state.allImages
 
 // const mapDispatchToProps = dispatch => bindActionCreators({logout}, dispatch)
 
-export default connect(mapStateToProps, null)(Tile)
+export default connect()(Tile)
