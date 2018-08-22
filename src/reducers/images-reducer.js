@@ -1,7 +1,7 @@
-    export const images = ( state={ all: [] }, action) => {
+    export const images = ( state={ allImages: [] }, action) => {
     switch(action.type){
       case 'GET_IMAGES':
-         return { ...state, all: action.payload }
+         return { ...state, allImages: action.payload }
 
         default:
           return state

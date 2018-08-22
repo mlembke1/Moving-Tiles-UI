@@ -11,14 +11,14 @@ class Tile extends React.Component {
     render(){
       return(
         <div className="tile-container">
-        
+
         </div>
       )
     }
 }
 
-const mapStateToProps = state => state.auth
+const mapStateToProps = state => state.allImages
 
-const mapDispatchToProps = dispatch => bindActionCreators({logout}, dispatch)
+// const mapDispatchToProps = dispatch => bindActionCreators({logout}, dispatch)
 
-export default connect()(Tile)
+export default connect(mapStateToProps, null)(Tile)
