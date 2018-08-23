@@ -3,7 +3,12 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "assert": "^1.4.1",
+    "chai": "^4.1.2",
+    "jsdom": "^12.0.0",
+    "mocha": "^5.2.0",
     "react": "^16.4.2",
+    "react-addons-test-utils": "^15.6.2",
     "react-dom": "^16.4.2",
     "react-redux": "^5.0.7",
     "react-scripts": "1.1.4",
@@ -16,6 +21,15 @@
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
+  },
+  "babel": {
+    "presets": [
+      "env",
+      "react"
+    ],
+    "plugins": [
+      "transform-es2015-modules-amd"
+    ]
   },
   "devDependencies": {
     "enzyme": "^3.4.4",
