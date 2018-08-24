@@ -3,11 +3,19 @@ div.tile-container {
     border: .5px solid lightcyan;
     flex: 1 0 15%; 
     transition: .25s;
+    opacity: .5;
 }
 
 div.tile-container[isenlarged="true"]{
-    background-color: yellow;
-    flex: 1 0 35%;
+    background-color: #fcd116;
+    flex: 1 0 20%;
+    opacity: 1;
+}
+
+div.tile-container[isenlarged="false"]{
+    background-color: lightblue;
+    flex: 1 0 15%;
+    opacity: .5;
 }
 
 img {
